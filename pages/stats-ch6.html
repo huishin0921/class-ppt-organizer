@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第六章：間斷隨機變數及其常用的機率分配 | 課堂 PPT 整理</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">Class<span>PPT</span>.notes</a>
+      <a href="../index.html" class="back-link">← 返回簡報總覽</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="meta-row">
+        <span class="course-badge">統計學</span>
+        <span>Ch.06</span>
+        <span>共 51 頁</span>
+        <span>來源：<code>第6章 間斷隨機變數及其常用的機率分配.pdf</code></span>
+      </div>
+      <h1>第六章：間斷隨機變數及其常用的機率分配</h1>
+    </section>
+
+    <section class="note-section">
+      <h2>核心觀念摘要</h2>
+      <ul>
+        <li><strong>間斷隨機變數與機率函數</strong>：變量個數有限或無限但可數者為間斷隨機變數；機率函數需滿足 <code>0 ≤ f(x) ≤ 1</code> 且總和為 1。</li>
+        <li><strong>期望值與變異數性質</strong>：<code>E(X) = Σx·f(x)</code>，<code>V(X) = E(X²) − [E(X)]²</code>；線性函數滿足 <code>E(a+bX) = a + bE(X)</code> 與 <code>V(a+bX) = b²V(X)</code>。</li>
+        <li><strong>二項機率分配（Binomial）</strong>：n 次獨立重複試行、每次僅成功（p）或失敗（q=1−p）；期望值 <code>np</code>、變異數 <code>npq</code>。</li>
+        <li><strong>泊松分配（Poisson）</strong>：衡量固定區間內稀有事件發生次數，參數為 λ，且期望值與變異數皆等於 λ；當 n 大且 p 小時可近似二項分配。</li>
+        <li><strong>超幾何分配（Hypergeometric）</strong>：有限母體（N）中「抽出不放回」抽取 n 個樣本的成功次數分配，變異數包含有限母體修正項 <code>(N−n)/(N−1)</code>。</li>
+      </ul>
+    </section>
+
+    <section class="note-section">
+      <h2>關鍵專有名詞與公式重點</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>術語 / 概念</th>
+            <th>說明與重點</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Discrete Random Variable</strong></td><td>間斷隨機變數，可能取值為有限個或可數無窮多個。</td></tr>
+          <tr><td><strong>Binomial Distribution</strong></td><td>二項分配，適用於獨立重複試驗且每次只有成功/失敗兩種結果。</td></tr>
+          <tr><td><strong>Poisson Distribution</strong></td><td>泊松分配，描述單位時間或空間內事件發生的次數，E(X)=V(X)=λ。</td></tr>
+          <tr><td><strong>Hypergeometric Distribution</strong></td><td>超幾何分配，適用於有限母體且「抽出不放回」的抽樣情境。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="note-section">
+      <h2>投影片頁數索引</h2>
+      <ul>
+        <li><strong>P.1–P.13</strong>：隨機變數的意義與分類（間斷 vs 連續）</li>
+        <li><strong>P.14–P.29</strong>：單一間斷與二元間斷隨機變數的機率函數、期望值與變異數</li>
+        <li><strong>P.30–P.41</strong>：二項隨機實驗特性、機率分配公式、Excel BINOM.DIST 與圖形</li>
+        <li><strong>P.42–P.51</strong>：Poisson 泊松分配（與二項近似比較）及超幾何分配</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      極簡課堂 PPT 整理網站 · 依循 <code>AGENTS.md</code> 規範持續維護
+    </div>
+  </footer>
+</body>
+</html>

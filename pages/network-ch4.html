@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第四章：無線區域網路 | 課堂 PPT 整理</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">Class<span>PPT</span>.notes</a>
+      <a href="../index.html" class="back-link">← 返回簡報總覽</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="meta-row">
+        <span class="course-badge">網路通訊概論</span>
+        <span>Ch.04</span>
+        <span>共 57 頁</span>
+        <span>來源：<code>04.pdf</code></span>
+      </div>
+      <h1>第四章：無線區域網路</h1>
+    </section>
+
+    <section class="note-section">
+      <h2>核心觀念摘要</h2>
+      <ul>
+        <li><strong>展頻與 CSMA/CA 機制</strong>：無線通訊採用跳頻式（FHSS）與直接序列（DSSS）展頻降低干擾與洩密風險；因無法偵測遠端隱藏節點碰撞，改採主動迴避的 CSMA/CA（IFS 空檔 + 指數退讓 + ACK 確認），並以 RTS/CTS 解決隱藏工作站問題。</li>
+        <li><strong>802.11 架構演進</strong>：分為透過 AP 轉送與橋接的 Infrastructure 模式、無 AP 的 Ad Hoc 模式，以及以軟體模擬基地台的 Wi-Fi Direct（Soft AP）。</li>
+        <li><strong>Wi-Fi 標準世代差異</strong>：802.11a (5GHz/54M) 與 802.11b/g (2.4GHz/11M–54M)；802.11n 引入 MIMO 多天線（空間多工、STBC、Beamforming）與訊框匯集；802.11ac 突破 1Gbps 並採雙頻；WiFi 6 (802.11ax) 導入 OFDMA、1024-QAM、BSS Coloring 與 6GHz 頻段。</li>
+        <li><strong>IEEE 802.15 藍牙與 ZigBee</strong>：藍牙使用 2.4GHz 跳頻（最多 8 裝置，依功率分 Class 1/2/3），支援 A2DP、HID 等 Profile；ZigBee（IEEE 802.15.4）採 Mesh 網狀拓樸，具低耗電、支援大量節點特性，常用於無線感測網路。</li>
+        <li><strong>RFID 與 NFC 近場通訊</strong>：RFID 由讀卡機、天線、標籤（被動/半主動/主動）與後端構成（ISO 14443/15693）；NFC 整合手機可模擬標籤、擔任讀卡機與點對點傳輸，並大幅簡化藍牙等裝置的配對程序。</li>
+      </ul>
+    </section>
+
+    <section class="note-section">
+      <h2>關鍵英文專有名詞</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>英文術語</th>
+            <th>中文說明與重點</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>CSMA/CA & RTS/CTS</strong></td>
+            <td>碰撞迴避機制與請求/清除傳送訊框，用來解決無線網路隱藏工作站碰撞問題。</td>
+          </tr>
+          <tr>
+            <td><strong>Infrastructure / Ad Hoc</strong></td>
+            <td>基礎建設模式（需透過 AP 轉送與橋接）與點對點隨意網路模式。</td>
+          </tr>
+          <tr>
+            <td><strong>MIMO & Beamforming</strong></td>
+            <td>多輸入多輸出天線技術與波束成形（集中訊號方向加強接收）。</td>
+          </tr>
+          <tr>
+            <td><strong>OFDMA & BSS Coloring</strong></td>
+            <td>WiFi 6 核心技術，細分子頻道給多裝置同時傳輸並以著色標記減少同頻干擾。</td>
+          </tr>
+          <tr>
+            <td><strong>ZigBee (IEEE 802.15.4)</strong></td>
+            <td>低速、低功耗、可組成 Mesh 網狀拓樸的無線感測網路技術。</td>
+          </tr>
+          <tr>
+            <td><strong>RFID / NFC</strong></td>
+            <td>無線射頻識別（電子票證）與近距離無線通訊（手機支付與快速配對）。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="note-section">
+      <h2>投影片頁數索引</h2>
+      <ul>
+        <li><strong>P.1–P.13</strong>：4-1 無線傳輸技術（跳頻/直接序列展頻、CSMA/CA 流程與 RTS/CTS）</li>
+        <li><strong>P.14–P.34</strong>：4-2 IEEE 802.11 無線區域網路（架構與 802.11a/b/g/n/ac/ax/ad/ah 規格演進）</li>
+        <li><strong>P.35–P.48</strong>：4-3 IEEE 802.15（藍牙技術規格/Profile/演進與 ZigBee Mesh 感測網路）</li>
+        <li><strong>P.49–P.55</strong>：4-4 NFC 與 RFID（標籤種類、ISO 標準與 NFC 三大模式）</li>
+        <li><strong>P.56–P.57</strong>：實作練習：使用 WiFi 分析儀觀察 2.4GHz 與 5GHz 訊號頻道分佈</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      極簡課堂 PPT 整理網站 · 依循 <code>AGENTS.md</code> 規範持續維護
+    </div>
+  </footer>
+</body>
+</html>

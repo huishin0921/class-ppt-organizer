@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第七章：連續隨機變數及其常用的機率分配 | 課堂 PPT 整理</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">Class<span>PPT</span>.notes</a>
+      <a href="../index.html" class="back-link">← 返回簡報總覽</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="meta-row">
+        <span class="course-badge">統計學</span>
+        <span>Ch.07</span>
+        <span>共 56 頁</span>
+        <span>來源：<code>第7章 連續隨機變數及其常用的機率分配.pdf</code></span>
+      </div>
+      <h1>第七章：連續隨機變數及其常用的機率分配</h1>
+    </section>
+
+    <section class="note-section">
+      <h2>核心觀念摘要</h2>
+      <ul>
+        <li><strong>連續機率密度函數 (pdf)</strong>：連續隨機變數取值為連續區間，機率由曲線下面積（積分）求算，單一點機率為 0，總面積等於 1。</li>
+        <li><strong>常態分配（Normal Distribution）</strong>：以 μ 為中心對稱、兩尾無限延伸、轉折點在 μ ± σ；機率範圍約為 ±1σ (68.26%)、±2σ (95.44%)、±3σ (99.74%)，並具線性加法定理。</li>
+        <li><strong>標準常態分配 Z ~ N(0, 1)</strong>：透過標準化公式 <code>Z = (X − μ) / σ</code> 將任意常態變數轉換後，即可查標準常態表或用 Excel <code>NORM.S.DIST</code> 求算機率。</li>
+        <li><strong>均等分配與指數分配</strong>：均等分配在 [a, b] 區間機率密度相同，<code>E(X)=(a+b)/2</code>、<code>V(X)=(b−a)²/12</code>；指數分配為右偏分配，常用於等候/服務時間（與泊松分配對應），<code>E(X)=1/λ</code>、<code>V(X)=1/λ²</code>。</li>
+        <li><strong>分配間的近似關係</strong>：當 N→∞ 且 n/N < 0.05 時，超幾何趨近二項分配；n→∞ 且 p 不微小時，二項分配可用常態分配近似。</li>
+      </ul>
+    </section>
+
+    <section class="note-section">
+      <h2>關鍵專有名詞與公式重點</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>術語 / 概念</th>
+            <th>說明與重點</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Probability Density Function (pdf)</strong></td><td>機率密度函數 f(x)，曲線下兩點間的面積即為該區間的機率。</td></tr>
+          <tr><td><strong>Standard Normal Distribution</strong></td><td>標準常態分配 N(0, 1)，平均數為 0、標準差為 1。</td></tr>
+          <tr><td><strong>Uniform Distribution</strong></td><td>均等分配，區間 [a, b] 內每個數值出現的密度完全相同。</td></tr>
+          <tr><td><strong>Exponential Distribution</strong></td><td>指數分配，右偏分配，用來描述事件發生的間隔時間或服務時間。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="note-section">
+      <h2>投影片頁數索引</h2>
+      <ul>
+        <li><strong>P.1–P.11</strong>：連續隨機變數、機率密度函數（pdf）、累加機率與期望值/變異數</li>
+        <li><strong>P.12–P.23</strong>：常態分配定義、形狀性質、機率範圍、重要性與加法定理</li>
+        <li><strong>P.24–P.42</strong>：標準常態分配 Z~N(0,1)、查表方法、Excel 函數與應用實例</li>
+        <li><strong>P.43–P.56</strong>：均等分配、指數分配及超幾何/二項/泊松/常態分配關係總結</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      極簡課堂 PPT 整理網站 · 依循 <code>AGENTS.md</code> 規範持續維護
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第一章：網路基本概念 | 課堂 PPT 整理</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">Class<span>PPT</span>.notes</a>
+      <a href="../index.html" class="back-link">← 返回簡報總覽</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="meta-row">
+        <span class="course-badge">網路通訊概論</span>
+        <span>Ch.01</span>
+        <span>共 45 頁</span>
+        <span>來源：<code>01_網路基本概念(1).pdf</code></span>
+      </div>
+      <h1>第一章：網路基本概念</h1>
+    </section>
+
+    <section class="note-section">
+      <h2>核心觀念摘要</h2>
+      <ul>
+        <li><strong>網路的功用與規模分類</strong>：透過傳輸媒介連結裝置以分享檔案、訊息、週邊與應用程式；依範圍可分為個人網路（PAN）、區域網路（LAN，範圍小且穩定）、廣域網路（WAN，跨都市或國界）與網際網路（Internet）。</li>
+        <li><strong>DoD 四層網路模型</strong>：由上而下分為應用層（Application）、傳輸層（Transport）、網路層（Network）與連結層（Link）。每層將資料加上表頭的動作稱為「封裝（Encapsulation）」。</li>
+        <li><strong>OSI 七層模型與差異</strong>：將網路細分為實體、鏈結、網路、傳輸、會議、表達、應用共 7 層；相比 DoD 多了會議層與表達層，且將連結層拆分為實體層與鏈結層。</li>
+        <li><strong>四種網路拓樸（Topology）</strong>：匯流排（Bus，易碰撞且單點斷線即癱瘓）、星狀（Star，以 Switch 取代 Hub 提升效能）、環狀（Ring，依令牌 Token 傳遞不碰撞）與網狀（Mesh，具容錯能力但佈線成本高）。</li>
+        <li><strong>SDN 軟體定義網路</strong>：將控制層與資料層分離，由 SDN 控制器透過 Northbound / Southbound API 統一管理網路架構並規劃最佳路徑。</li>
+      </ul>
+    </section>
+
+    <section class="note-section">
+      <h2>關鍵英文專有名詞</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>英文術語</th>
+            <th>中文說明與重點</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>DoD Model</strong></td>
+            <td>美國國防部網路模型，將網際網路分工為連結、網路、傳輸、應用 4 層。</td>
+          </tr>
+          <tr>
+            <td><strong>OSI Model</strong></td>
+            <td>開放系統互連模型（Open Systems Interconnection），分為 7 層架構。</td>
+          </tr>
+          <tr>
+            <td><strong>Encapsulation / Payload</strong></td>
+            <td>封裝（加上各層表頭的動作）與資料承載（封裝前的原始資料）。</td>
+          </tr>
+          <tr>
+            <td><strong>Packet / Frame</strong></td>
+            <td>封裝後的資料稱為封包；在連結層傳送的封包則稱為訊框。</td>
+          </tr>
+          <tr>
+            <td><strong>Fault Tolerance</strong></td>
+            <td>容錯能力，網狀網路因擁有多條路徑而具備高度容錯特性。</td>
+          </tr>
+          <tr>
+            <td><strong>SDN (Software Defined Network)</strong></td>
+            <td>軟體定義網路，透過軟體集中控制 OSI 第 2～7 層的網路架構。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="note-section">
+      <h2>投影片頁數索引</h2>
+      <ul>
+        <li><strong>P.1–P.9</strong>：1-1 什麼是網路？（網路資源分享、LAN / PAN / WAN / Internet）</li>
+        <li><strong>P.10–P.29</strong>：1-2 網路的分層架構（DoD 4 層模型、封裝概念、OSI 7 層對照）</li>
+        <li><strong>P.30–P.41</strong>：1-3 網路拓樸（匯流排、星狀與 Switch、環狀 Token、網狀與混合式）</li>
+        <li><strong>P.42–P.45</strong>：1-4 SDN 軟體定義網路（控制層 / 資料層分離與 3 層架構）</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      極簡課堂 PPT 整理網站 · 依循 <code>AGENTS.md</code> 規範持續維護
+    </div>
+  </footer>
+</body>
+</html>

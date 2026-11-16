@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第四章：分析資料－以統計測量數來呈現 | 課堂 PPT 整理</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">Class<span>PPT</span>.notes</a>
+      <a href="../index.html" class="back-link">← 返回簡報總覽</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="meta-row">
+        <span class="course-badge">統計學</span>
+        <span>Ch.04</span>
+        <span>共 68 頁</span>
+        <span>來源：<code>第4章 分析資料-以統計測量數來呈現.pdf</code></span>
+      </div>
+      <h1>第四章：分析資料－以統計測量數來呈現</h1>
+    </section>
+
+    <section class="note-section">
+      <h2>核心觀念摘要</h2>
+      <ul>
+        <li><strong>中心位置衡量</strong>：算術平均數（易受極端值影響）、加權平均數、幾何平均數（適合等比數列與投資報酬率）、中位數（不受極端值影響）與眾數。</li>
+        <li><strong>分散程度與等分位置</strong>：全距（R）、四分位距（IQR = Q3 − Q1）、母體/樣本變異數（分母分別為 N 與 n−1）、標準差與變異係數（CV = 標準差 / 平均數，用於比較不同單位或平均數差異大的資料）。</li>
+        <li><strong>柴比氏定理與經驗法則</strong>：柴比氏定理適用任何分配，至少 <code>1 − 1/k²</code> 的資料落在 μ ± kσ 內；鐘形分配經驗法則為 ±1σ (68%)、±2σ (95%)、±3σ (99.7%)。</li>
+        <li><strong>Z 值與盒鬚圖（5 數彙總）</strong>：Z 值衡量觀察值距離平均數幾個標準差；盒鬚圖以極小值、Q1、中位數、Q3、極大值呈現，並以 <code>Q1 − 1.5×IQR</code> 與 <code>Q3 + 1.5×IQR</code> 檢查極端值（Outliers）。</li>
+        <li><strong>兩組資料相關性</strong>：共變數（Covariance）判斷正/反向變動方向，相關係數（r，介於 −1 到 +1）衡量線性相關強度。</li>
+      </ul>
+    </section>
+
+    <section class="note-section">
+      <h2>關鍵專有名詞與公式重點</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>術語 / 概念</th>
+            <th>說明與重點</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Geometric Mean</strong></td><td>幾何平均數，適合計算平均成長率與複利投資報酬率。</td></tr>
+          <tr><td><strong>Coefficient of Variation (CV)</strong></td><td>變異係數（標準差 / 平均數），屬於無單位的相對分散度指標。</td></tr>
+          <tr><td><strong>Chebyshev's Theorem</strong></td><td>柴比氏定理，不限分配形狀皆保證至少 1 − 1/k² 資料落在 k 個標準差內。</td></tr>
+          <tr><td><strong>Outliers (IQR Rule)</strong></td><td>極端值判斷準則：小於 Q1 − 1.5×IQR 或大於 Q3 + 1.5×IQR。</td></tr>
+          <tr><td><strong>Covariance & Correlation</strong></td><td>共變數與相關係數，衡量兩組數量變數的連動方向與線性關聯強度。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="note-section">
+      <h2>投影片頁數索引</h2>
+      <ul>
+        <li><strong>P.1–P.27</strong>：中心位置指標（算術、加權、幾何平均數、中位數、眾數）與 Excel 實作</li>
+        <li><strong>P.28–P.42</strong>：等分位置（四分位/十分位/百分位）與分散度（全距、IQR、變異數、標準差、CV）</li>
+        <li><strong>P.43–P.56</strong>：柴比氏定理、經驗法則、Z 值、盒鬚圖極端值檢查與分組資料測量數</li>
+        <li><strong>P.57–P.68</strong>：共變數與相關係數（母體 ρ 與樣本 r）</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      極簡課堂 PPT 整理網站 · 依循 <code>AGENTS.md</code> 規範持續維護
+    </div>
+  </footer>
+</body>
+</html>

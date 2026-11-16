@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第三章：有線區域網路－以乙太網路為例 | 課堂 PPT 整理</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">Class<span>PPT</span>.notes</a>
+      <a href="../index.html" class="back-link">← 返回簡報總覽</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="meta-row">
+        <span class="course-badge">網路通訊概論</span>
+        <span>Ch.03</span>
+        <span>共 55 頁</span>
+        <span>來源：<code>03.pdf</code></span>
+      </div>
+      <h1>第三章：有線區域網路－以乙太網路為例</h1>
+    </section>
+
+    <section class="note-section">
+      <h2>核心觀念摘要</h2>
+      <ul>
+        <li><strong>鏈結層三大工作</strong>：切割為訊框（固定長度、長度欄位、Flag+ESC 跳脫、特定位元樣式補 0）、偵錯（同位元檢查無法偵測偶數個位元同時錯誤）與媒介存取控制。</li>
+        <li><strong>碰撞領域與 CSMA/CD</strong>：發送前先偵測空檔，發生碰撞時送出壅塞訊號並等待隨機「退讓時間（Back-Off Time）」（最多重試 16 次）；中繼器會擴大碰撞領域，橋接器則可分割碰撞領域。</li>
+        <li><strong>乙太網路訊框與定址</strong>：IEEE 802.3 以廣播方式傳送，透過獨一無二的 MAC 位址收件；訊框包含 Preamble (7B)、SFD (1B)、來源/目的 MAC (各 6B)、Payload (46~1500B) 與 CRC (4B)，最小訊框須達 64 bytes 以確保能偵測碰撞。</li>
+        <li><strong>乙太網路演進（XBaseY）</strong>：從 10Mbps（10Base5/2/T/F）、100Mbps Fast Ethernet（改星狀拓樸＋自動協商 Auto Negotiation）、1Gbps（802.3z 光纖 / 802.3ab 1000BaseT）、10GbE（僅全雙工）發展至 40Gb/100Gb（802.3ba-2010）。</li>
+        <li><strong>VLAN 與實作壓線</strong>：VLAN（IEEE 802.1Q）可隔離廣播封包、突破實體位置限制並提升安全性；RJ-45 壓接需將第 3、5 條線（白藍、白綠）對調，剪齊露線約 14mm 後壓緊。</li>
+      </ul>
+    </section>
+
+    <section class="note-section">
+      <h2>關鍵英文專有名詞</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>英文術語</th>
+            <th>中文說明與重點</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Framing</strong></td>
+            <td>切割訊框，將資料分割為適當大小區塊以利傳輸與偵錯。</td>
+          </tr>
+          <tr>
+            <td><strong>Collision Domain</strong></td>
+            <td>碰撞領域，壅塞訊號所能到達的範圍；橋接器可將其分割。</td>
+          </tr>
+          <tr>
+            <td><strong>CSMA/CD</strong></td>
+            <td>載波偵測多重存取／碰撞偵測，有線乙太網路的核心存取機制。</td>
+          </tr>
+          <tr>
+            <td><strong>MAC Address</strong></td>
+            <td>網路卡實體位址（6 bytes），由硬體製造商設定且獨一無二。</td>
+          </tr>
+          <tr>
+            <td><strong>Auto Negotiation</strong></td>
+            <td>自動協商，讓高低速裝置互相協調出雙方支援的傳輸速率。</td>
+          </tr>
+          <tr>
+            <td><strong>VLAN (IEEE 802.1Q)</strong></td>
+            <td>虛擬區域網路，透過 VLAN ID 在交換器上劃分邏輯群組。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="note-section">
+      <h2>投影片頁數索引</h2>
+      <ul>
+        <li><strong>P.1–P.20</strong>：3-1 鏈結層工作（切割訊框、同位元偵錯、CSMA/CD 與中繼器/橋接器）</li>
+        <li><strong>P.21–P.28</strong>：3-2 乙太網路簡介與原理（MAC 位址、訊框欄位與 64 bytes 最小限制）</li>
+        <li><strong>P.29–P.36</strong>：3-3 乙太網路演進（10M、100M Fast Ethernet、1G、10GbE、40G/100G）</li>
+        <li><strong>P.37–P.41</strong>：3-4 VLAN 虛擬區域網路（三大功能與 802.1Q 標準）</li>
+        <li><strong>P.42–P.55</strong>：實作練習：以雙絞線壓接 RJ-45 接頭並連接交換器</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      極簡課堂 PPT 整理網站 · 依循 <code>AGENTS.md</code> 規範持續維護
+    </div>
+  </footer>
+</body>
+</html>

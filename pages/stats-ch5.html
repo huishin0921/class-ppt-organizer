@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第五章：機率論 | 課堂 PPT 整理</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">Class<span>PPT</span>.notes</a>
+      <a href="../index.html" class="back-link">← 返回簡報總覽</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="meta-row">
+        <span class="course-badge">統計學</span>
+        <span>Ch.05</span>
+        <span>共 41 頁</span>
+        <span>來源：<code>第5章 機率論.pdf</code></span>
+      </div>
+      <h1>第五章：機率論</h1>
+    </section>
+
+    <section class="note-section">
+      <h2>核心觀念摘要</h2>
+      <ul>
+        <li><strong>隨機實驗與樣本空間</strong>：事先不知結果但已知所有可能出象的實驗稱為隨機實驗；所有基本出象的集合為樣本空間（S），其部分集合為事件（簡單事件與複合事件）。</li>
+        <li><strong>三大機率理論與機率公理</strong>：包含古典機率、客觀機率（大數法則長期趨於穩定）與主觀機率；任一事件機率介於 0～1、樣本空間機率總和為 1、互斥事件聯集機率等於各別機率和。</li>
+        <li><strong>聯合、邊際與條件機率</strong>：聯合機率為兩事件同時發生的機率；邊際機率只考慮單一類別；條件機率 <code>P(A|B) = P(A∩B) / P(B)</code>。</li>
+        <li><strong>獨立事件 vs 互斥事件</strong>：獨立事件滿足 <code>P(A∩B) = P(A)·P(B)</code>（一事件發生不影響另一事件）；互斥事件則無共同樣本點（<code>P(A∩B) = 0</code>）。</li>
+        <li><strong>分割定理與貝氏定理（Bayes' Theorem）</strong>：利用新資訊（概似機率 <code>P(B|Ai)</code>）修正事前機率 <code>P(Ai)</code>，進而計算出事後機率 <code>P(Ai|B)</code>。</li>
+      </ul>
+    </section>
+
+    <section class="note-section">
+      <h2>關鍵專有名詞與公式重點</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>術語 / 概念</th>
+            <th>說明與重點</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Sample Space (S)</strong></td><td>樣本空間，隨機實驗所有可能基本出象的集合。</td></tr>
+          <tr><td><strong>Law of Large Numbers</strong></td><td>大數法則，重複相同實驗次數越多，相對次數越趨近穩定機率值。</td></tr>
+          <tr><td><strong>Conditional Probability</strong></td><td>條件機率，已知 B 發生下 A 發生的機率 P(A|B)。</td></tr>
+          <tr><td><strong>Mutually Exclusive / Independent</strong></td><td>互斥事件（交集為空集合）與獨立事件（發生互不影響）。</td></tr>
+          <tr><td><strong>Bayes' Theorem</strong></td><td>貝氏定理，結合事前機率與新資訊計算事後機率的核心公式。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="note-section">
+      <h2>投影片頁數索引</h2>
+      <ul>
+        <li><strong>P.1–P.15</strong>：隨機實驗、樣本空間、簡單/複合事件、乘數定理與排列組合</li>
+        <li><strong>P.16–P.19</strong>：古典/客觀/主觀機率理論、大數法則與機率三大公理</li>
+        <li><strong>P.20–P.34</strong>：聯合/邊際/條件機率、獨立與互斥事件、加法/乘法/分割定理</li>
+        <li><strong>P.35–P.41</strong>：貝氏定理（事前機率 → 聯合機率 → 事後機率）樹枝圖與應用</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      極簡課堂 PPT 整理網站 · 依循 <code>AGENTS.md</code> 規範持續維護
+    </div>
+  </footer>
+</body>
+</html>

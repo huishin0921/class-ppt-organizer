@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第二章：數據通訊與傳輸媒介 | 課堂 PPT 整理</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">Class<span>PPT</span>.notes</a>
+      <a href="../index.html" class="back-link">← 返回簡報總覽</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="meta-row">
+        <span class="course-badge">網路通訊概論</span>
+        <span>Ch.02</span>
+        <span>共 53 頁</span>
+        <span>來源：<code>02.pdf</code></span>
+      </div>
+      <h1>第二章：數據通訊與傳輸媒介</h1>
+    </section>
+
+    <section class="note-section">
+      <h2>核心觀念摘要</h2>
+      <ul>
+        <li><strong>實體層與訊號類型</strong>：實體層負責將資料依媒介特性轉為電流（銅線）、光（光纖）或電磁波（無線）；數位訊號狀態有限且抗雜訊能力優於連續變化的類比訊號。</li>
+        <li><strong>基頻編碼技術（Baseband）</strong>：直接改變電位高低傳遞資料，包含 NRZ、RZ、NRZI、Manchester（每個位元中間必轉態以提供同步）與 Differential Manchester（1 顛倒、0 維持前一位元變化方式）。</li>
+        <li><strong>寬頻調變技術（Broadband）</strong>：將資料加入載波（Modulation），分為控制振幅（ASK）、頻率（FSK）、相位（PSK：BPSK/DBPSK/QPSK）及結合振幅與相位的正交振幅調變（QAM）。</li>
+        <li><strong>同步、頻寬與多工存取</strong>：接收端需時脈同步以判斷位元邊界；傳輸頻寬單位為 bps，實際速率稱為 Throughput；多工分為分頻多工（FDM）與分時多工（同步 / 非同步 TDM）。</li>
+        <li><strong>有線與無線傳輸媒介</strong>：雙絞線（UTP / STP，Cat 3～Cat 8）便宜且佈線彈性高，但易受電磁干擾；光纖（SMF 單模長距離 vs MMF 多模短距離）高速且抗干擾；無線電磁波頻率越高，穿透力越低且越趨直線傳播。</li>
+      </ul>
+    </section>
+
+    <section class="note-section">
+      <h2>關鍵英文專有名詞</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>英文術語</th>
+            <th>中文說明與重點</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Baseband / Broadband</strong></td>
+            <td>基頻傳輸（直接控制訊號狀態）與寬頻傳輸（控制載波狀態）。</td>
+          </tr>
+          <tr>
+            <td><strong>Differential Manchester</strong></td>
+            <td>差動式曼徹斯特編碼，自帶時脈同步且較具抗極性反轉能力。</td>
+          </tr>
+          <tr>
+            <td><strong>ASK / FSK / PSK / QAM</strong></td>
+            <td>振幅、頻率、相位偏移鍵制與正交振幅調變技術。</td>
+          </tr>
+          <tr>
+            <td><strong>Throughput</strong></td>
+            <td>流通量（傳輸效率），代表網路實際能達到的資料傳輸速率。</td>
+          </tr>
+          <tr>
+            <td><strong>Multiplexing (FDM / TDM)</strong></td>
+            <td>多工存取，包含切割頻寬的分頻多工與輪流使用時槽的分時多工。</td>
+          </tr>
+          <tr>
+            <td><strong>UTP / STP</strong></td>
+            <td>無遮蔽式雙絞線與遮蔽式雙絞線（多一層金屬遮蔽抗干擾）。</td>
+          </tr>
+          <tr>
+            <td><strong>SMF / MMF</strong></td>
+            <td>單模式光纖（長距離、效能極佳）與多模式光纖（短距離、成本較低）。</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="note-section">
+      <h2>投影片頁數索引</h2>
+      <ul>
+        <li><strong>P.1–P.10</strong>：2-1 實體層工作與 2-2 數位／類比資料與訊號</li>
+        <li><strong>P.11–P.21</strong>：2-3-1～2-3-3 基頻與寬頻概念、5 種二階基頻編碼波形</li>
+        <li><strong>P.22–P.34</strong>：2-3-4 寬頻調變技術（ASK、FSK、BPSK/DBPSK/QPSK、QAM）</li>
+        <li><strong>P.35–P.41</strong>：2-3-5～2-3-7 同步機制、頻寬定義與多工存取（FDM / TDM）</li>
+        <li><strong>P.42–P.53</strong>：2-4 有線媒介（雙絞線等級表、光纖構造）與 2-5 無線電磁波頻譜</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      極簡課堂 PPT 整理網站 · 依循 <code>AGENTS.md</code> 規範持續維護
+    </div>
+  </footer>
+</body>
+</html>

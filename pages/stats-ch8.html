@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>第八章：簡單隨機抽樣與抽樣分配 | 課堂 PPT 整理</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand">Class<span>PPT</span>.notes</a>
+      <a href="../index.html" class="back-link">← 返回簡報總覽</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-hero">
+      <div class="meta-row">
+        <span class="course-badge">統計學</span>
+        <span>Ch.08</span>
+        <span>共 59 頁</span>
+        <span>來源：<code>第8章 簡單隨機抽樣與抽樣分配.pdf</code></span>
+      </div>
+      <h1>第八章：簡單隨機抽樣與抽樣分配</h1>
+    </section>
+
+    <section class="note-section">
+      <h2>核心觀念摘要</h2>
+      <ul>
+        <li><strong>抽樣重要性與兩類誤差</strong>：因資源有限或破壞性實驗需進行抽樣；「抽樣誤差」來自抽樣機遇與樣本數，「非抽樣誤差」則源自紀錄、處理或回應錯誤。</li>
+        <li><strong>簡單隨機抽樣（SRS）</strong>：母體中每個樣本被抽出的機率皆相等，可透過抽籤或電腦亂數表執行，並需界定抽樣單位與抽樣底冊。</li>
+        <li><strong>樣本平均數的抽樣分配</strong>：<code>E(X̄) = μ</code>；無限母體變異數為 <code>σ² / n</code>，有限母體不放回則乘以修正因子 <code>(N−n)/(N−1)</code>。</li>
+        <li><strong>中央極限定理（Central Limit Theorem）</strong>：無論母體為何種分配，只要樣本數夠大（一般 <code>n ≥ 30</code>），樣本平均數 X̄ 的抽樣分配會趨近常態分配 <code>N(μ, σ²/n)</code>。</li>
+        <li><strong>樣本比例與其他抽樣法</strong>：大樣本（<code>np > 5</code> 且 <code>nq > 5</code>）時樣本比例 <code>p̂</code> 趨近常態 <code>N(p, pq/n)</code>；實務上另有分層抽樣、部落（集團）抽樣、系統抽樣、分段抽樣、判斷抽樣與方便抽樣。</li>
+      </ul>
+    </section>
+
+    <section class="note-section">
+      <h2>關鍵專有名詞與公式重點</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>術語 / 概念</th>
+            <th>說明與重點</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Sampling / Non-sampling Error</strong></td><td>抽樣誤差（隨機機遇所致）與非抽樣誤差（紀錄處理失誤所致）。</td></tr>
+          <tr><td><strong>Simple Random Sampling (SRS)</strong></td><td>簡單隨機抽樣，母體中所有可能樣本被抽中的機率完全相等。</td></tr>
+          <tr><td><strong>Sampling Distribution</strong></td><td>抽樣分配，樣本統計量（如樣本平均數 X̄）所形成的機率分配。</td></tr>
+          <tr><td><strong>Central Limit Theorem (CLT)</strong></td><td>中央極限定理，大樣本下 X̄ 抽樣分配趨近常態分配的核心定理。</td></tr>
+          <tr><td><strong>Stratified / Cluster / Systematic</strong></td><td>分層抽樣（層內同質）、部落抽樣（群內異質）與系統抽樣（固定間隔）。</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="note-section">
+      <h2>投影片頁數索引</h2>
+      <ul>
+        <li><strong>P.1–P.18</strong>：抽樣重要性、抽樣誤差 vs 非抽樣誤差、簡單隨機抽樣與 Excel 操作</li>
+        <li><strong>P.19–P.35</strong>：抽樣分配概念、樣本平均數 X̄ 的平均數與變異數（無限/有限母體）</li>
+        <li><strong>P.36–P.47</strong>：中央極限定理（n ≥ 30）與樣本比例 p̂ 的抽樣分配</li>
+        <li><strong>P.48–P.59</strong>：其他抽樣方法（分層、部落、系統、分段、判斷、方便抽樣）</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      極簡課堂 PPT 整理網站 · 依循 <code>AGENTS.md</code> 規範持續維護
+    </div>
+  </footer>
+</body>
+</html>
