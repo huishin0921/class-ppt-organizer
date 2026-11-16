@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>極簡課堂 PPT 整理中心</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Class<span>PPT</span>.notes</a>
+      <span class="header-meta">依照 AGENTS.md 規範建置</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>課堂簡報整理中心</h1>
+      <p>極簡、可擴充的課程 PPT 歸檔與重點索引系統。上傳檔案即可自動依命名規則分類，並可由 AI 持續擴充獨立筆記頁。</p>
+    </section>
+
+    <section id="dropzone" class="upload-box" role="button" tabindex="0">
+      <div class="upload-title">拖曳課堂 PPT / PDF 到這裡，或點擊選擇檔案</div>
+      <div class="upload-hint">建議檔名格式：<code>科目_週次_主題.pptx</code>（例如：<code>演算法_W05_動態規劃.pptx</code>）</div>
+      <input type="file" id="fileInput" accept=".ppt,.pptx,.pdf" multiple hidden />
+      <div class="upload-actions">
+        <button type="button" class="btn btn-primary">選擇簡報檔案</button>
+        <button type="button" id="clearUploadsBtn" class="btn">清除本機上傳紀錄</button>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <div id="filterPills" class="filter-pills"></div>
+      <input type="search" id="searchInput" class="search-input" placeholder="搜尋課程、標題或關鍵字..." />
+    </section>
+
+    <section id="slidesGrid" class="slides-grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      極簡課堂 PPT 整理網站 · 依循 <code>AGENTS.md</code> 規範持續維護
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
